@@ -1,0 +1,36 @@
+<div class='content-wrapper' ng-init="app.settings.pagetitle = 'fileupload';">
+    <div class="col-lg-12"  ng-controller="FileUploadCtrl" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+        <section class="nobox box ">
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Select files</h3>
+                        <div >
+                            <!-- 3. nv-file-over uploader="link" over-class="className" -->
+                            
+                            
+
+                            <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
+<!--
+                            <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                                <div nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well my-drop-zone">
+                                    Another drop zone with its own settings
+                                </div>
+                            </div>
+-->
+                        </div>
+                        <!-- Example: nv-file-select="" uploader="{Object}" options="{Object}" filters="{String}" -->
+<!--                        Multiple-->
+                        
+                        <br/> 
+                        <h4>Single</h4>
+                        <input class="col-lg-offset-1" filepicker type="filepicker-dragdrop" data-fp-services="computer,facebook,dropbox,box" on-success="onSuccess(event.fpfile)" data-fp-apikey="A0RRghrDSOu0L0C3qXD0Oz" />
+                        
+                   
+
+                    <div class="col-md-9" style="margin-bottom: 40px">
+                        <h3>Upload queue</h3>
+                        <p>Queue length: {{ uploader.queue.length }}</p>
+                        
+                       
+                        </div>
